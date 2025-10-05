@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 👈 makes it responsive -->
   <title>Amrutha Rao & Santhi Kiran Pammi | Follow & Location</title>
   <style>
     * {
@@ -9,6 +10,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
@@ -17,14 +19,14 @@
     }
 
     .profile-section {
-      height: 100vh;
+      min-height: 100vh;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px;
+      padding: 30px 15px;
       transition: all 0.6s ease;
       position: relative;
     }
@@ -38,27 +40,28 @@
     }
 
     .profile-pic {
-      width: 160px;
-      height: 160px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       border: 5px solid white;
       object-fit: cover;
       box-shadow: 0px 4px 20px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
     }
+
     .profile-pic:hover {
       transform: scale(1.08);
     }
 
     h1 {
       margin-top: 20px;
-      font-size: 34px;
+      font-size: 2rem;
       letter-spacing: 1px;
       text-shadow: 0px 3px 10px rgba(0,0,0,0.4);
     }
 
     p {
-      font-size: 18px;
+      font-size: 1rem;
       color: #f5f5f5;
       margin-bottom: 25px;
       font-weight: 500;
@@ -68,10 +71,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 280px;
+      max-width: 280px;
+      width: 90%;
       margin: 12px auto;
       padding: 14px;
-      font-size: 18px;
+      font-size: 1rem;
       text-decoration: none;
       color: white;
       border-radius: 50px;
@@ -82,8 +86,8 @@
     }
 
     .link-btn img {
-      width: 26px;
-      height: 26px;
+      width: 22px;
+      height: 22px;
       margin-right: 10px;
     }
 
@@ -125,22 +129,36 @@
 
     .swipe-line {
       position: absolute;
-      bottom: 30px;
-      font-size: 15px;
+      bottom: 20px;
+      font-size: 0.9rem;
       opacity: 0.9;
       background: rgba(255,255,255,0.2);
-      padding: 10px 25px;
+      padding: 8px 20px;
       border-radius: 30px;
       backdrop-filter: blur(4px);
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* 🧠 Responsive adjustments */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+      .link-btn {
+        font-size: 1.1rem;
+        padding: 16px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- 🔹 Profile 1: Amrutha Rao Pammi -->
+  <!-- 🔹 Profile 1 -->
   <section class="profile-section" id="amrutha">
-    <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/amrutharao.jpg" alt="Amrutha Rao Pammi" class="profile-pic">
+    <img src="amrutha.jpg" alt="Amrutha Rao Pammi" class="profile-pic">
 
     <h1>AMRUTHA RAO PAMMI</h1>
     <p>Follow us on</p>
@@ -150,10 +168,9 @@
       Instagram
     </a>
 
-    <!-- Trust Facebook page -->
-    <a class="link-btn facebook" href="https://www.facebook.com/AMRUTHARAOPAMMI" target="_blank">
+    <a class="link-btn facebook" href="https://www.facebook.com/OLIVALACharitableTrust" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
-      Facebook
+      Facebook Page
     </a>
 
     <a class="link-btn youtube" href="https://youtube.com/@amrutharaopammi?si=aUPbINTKNz15MJBr" target="_blank">
@@ -161,18 +178,17 @@
       YouTube
     </a>
 
-    <!-- Convention Location (Google Maps) -->
-    <a class="link-btn location" href="https://maps.app.goo.gl/mPgn4T9JsM55r2hL7?g_st=ipc" target="_blank">
-      <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/location.png" alt="Google Maps">
+    <a class="link-btn location" href="https://maps.google.com/?q=Olivalu+Convention+Grounds+Rajahmundry" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Maps_Icon_%282020%29.svg" alt="Google Maps">
       Convention Location
     </a>
 
     <div class="swipe-line">⬇ Swipe Down | Swipe Up ⬆</div>
   </section>
 
-  <!-- 🔹 Profile 2: Santhi Kiran Pammi -->
+  <!-- 🔹 Profile 2 -->
   <section class="profile-section" id="santhi">
-    <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/Untitled-1.jpg" alt="Santhi Kiran Pammi" class="profile-pic">
+    <img src="santhi.jpg" alt="Santhi Kiran Pammi" class="profile-pic">
 
     <h1>SANTHI KIRAN PAMMI</h1>
     <p>Follow us on</p>
@@ -182,7 +198,7 @@
       Instagram
     </a>
 
-    <a class="link-btn facebook" href="https://www.facebook.com/santhikiranpammi.777" target="_blank">
+    <a class="link-btn facebook" href="https://www.facebook.com/SANTHIKIRANPAMMI" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
       Facebook
     </a>
@@ -193,7 +209,7 @@
     </a>
 
     <a class="link-btn threads" href="https://www.threads.net/@SANTHIKIRANPAMMI" target="_blank">
-      <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/threads.png" alt="Threads">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Threads_Logo.png" alt="Threads">
       Threads
     </a>
 
