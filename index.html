@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amrutha Rao & Santhi Kiran Pammi | Follow & Location</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .profile-section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      transition: all 0.6s ease;
+      position: relative;
+    }
+
+    /* Backgrounds */
+    #amrutha {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+    #santhi {
+      background: linear-gradient(135deg, #ff6a00, #ee0979, #b91d73, #8e54e9);
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      box-shadow: 0px 4px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.08);
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 34px;
+      letter-spacing: 1px;
+      text-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+    }
+
+    p {
+      font-size: 18px;
+      color: #f5f5f5;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+      margin: 12px auto;
+      padding: 14px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.35);
+      background-size: 200%;
+    }
+
+    .link-btn img {
+      width: 26px;
+      height: 26px;
+      margin-right: 10px;
+    }
+
+    /* Gradients */
+    .instagram {
+      background-image: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+      animation: gradientMove 6s infinite alternate;
+    }
+
+    .facebook {
+      background-image: linear-gradient(45deg, #1877f2, #3b5998, #4f69d7);
+      animation: gradientMove 6s infinite alternate;
+    }
+
+    .youtube {
+      background-image: linear-gradient(45deg, #ff0000, #cc0000, #ff4d4d);
+      animation: gradientMove 6s infinite alternate;
+    }
+
+    .threads {
+      background-image: linear-gradient(45deg, #000, #434343, #000);
+      animation: gradientMove 6s infinite alternate;
+    }
+
+    .location {
+      background-image: linear-gradient(45deg, #00b09b, #96c93d);
+      animation: gradientMove 6s infinite alternate;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .link-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0px 8px 25px rgba(255,255,255,0.3);
+    }
+
+    .swipe-line {
+      position: absolute;
+      bottom: 30px;
+      font-size: 15px;
+      opacity: 0.9;
+      background: rgba(255,255,255,0.2);
+      padding: 10px 25px;
+      border-radius: 30px;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Profile 1: Amrutha Rao Pammi -->
+  <section class="profile-section" id="amrutha">
+    <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/amrutharao.jpg" alt="Amrutha Rao Pammi" class="profile-pic">
+
+    <h1>AMRUTHA RAO PAMMI</h1>
+    <p>Follow us on</p>
+
+    <a class="link-btn instagram" href="https://www.instagram.com/AMRUTHARAOPAMMI" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      Instagram
+    </a>
+
+    <!-- Trust Facebook page -->
+    <a class="link-btn facebook" href="https://www.facebook.com/AMRUTHARAOPAMMI" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+      Facebook
+    </a>
+
+    <a class="link-btn youtube" href="https://youtube.com/@amrutharaopammi?si=aUPbINTKNz15MJBr" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+      YouTube
+    </a>
+
+    <!-- Convention Location (Google Maps) -->
+    <a class="link-btn location" href="https://maps.app.goo.gl/mPgn4T9JsM55r2hL7?g_st=ipc" target="_blank">
+      <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/location.png" alt="Google Maps">
+      Convention Location
+    </a>
+
+    <div class="swipe-line">⬇ Swipe Down | Swipe Up ⬆</div>
+  </section>
+
+  <!-- 🔹 Profile 2: Santhi Kiran Pammi -->
+  <section class="profile-section" id="santhi">
+    <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/Untitled-1.jpg" alt="Santhi Kiran Pammi" class="profile-pic">
+
+    <h1>SANTHI KIRAN PAMMI</h1>
+    <p>Follow us on</p>
+
+    <a class="link-btn instagram" href="https://www.instagram.com/SANTHIKIRANPAMMI" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      Instagram
+    </a>
+
+    <a class="link-btn facebook" href="https://www.facebook.com/santhikiranpammi.777" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+      Facebook
+    </a>
+
+    <a class="link-btn youtube" href="https://youtube.com/@santhikiranpammi" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+      YouTube
+    </a>
+
+    <a class="link-btn threads" href="https://www.threads.net/@SANTHIKIRANPAMMI" target="_blank">
+      <img src="https://uploads.onecompiler.io/43yqz8kyq/43yqybedk/threads.png" alt="Threads">
+      Threads
+    </a>
+
+    <div class="swipe-line">⬆ Swipe Up | Swipe Down ⬇</div>
+  </section>
+
+</body>
+</html>
